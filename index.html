@@ -4,20 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My Sorceress's Grimoire | Sarayu Marri</title>
-<!-- All page styling lives in this external file -->
+<!--All page styling lives in this external file-->
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- ============================================================
-     TOP NAVIGATION
-     Sticky bar with my logo, links that jump down to each section
-     (using #id anchors), and quick icon links on the right.
-     ============================================================ -->
+<!--Sticky bar with my logo, links that jump down to each section
+     (using #id anchors), and quick icon links on the right-->
 <header class="top-nav">
   <div class="tn-logo"><span class="tn-logo-s">S</span>&nbsp;&middot;&nbsp;SARAYU</div>
 
-  <!-- Each link below scrolls to the matching section id further down the page -->
+  <!--Each link below scrolls to the matching section id further down the page-->
   <nav class="tabs-row" aria-label="Section navigation">
     <a class="tab" href="#origins">Origins</a>
     <a class="tab" href="#quests">Quests</a>
@@ -27,38 +24,33 @@
   </nav>
 
   <div class="tn-right">
-    <!-- TODO (swap link): update if my GitHub username ever changes -->
+    <!--TODO (swap link)-->
     <a class="tn-btn" href="https://github.com/sarayumarri" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
-    <!-- TODO (swap link): this should always point at my full site -->
+    <!--TODO (swap link)-->
     <a class="tn-btn" href="https://sarayu.dev" target="_blank" rel="noopener" aria-label="Full site">S</a>
   </div>
 </header>
 
 <main>
 
-  <!-- ============================================================
-       SECTION: HERO
-       The first thing a visitor sees. Dark background with a hand-
-       coded SVG (gradient leaves + gem shapes + little sparkle dots)
-       behind my name and the two call-to-action buttons.
-       ============================================================ -->
+  <!--homepage w/ call-to-action buttons-->
   <div class="pg-shell" id="intro">
     <div class="home-dark">
 
-      <!-- Decorative background graphics only — screen readers should skip these -->
+      <!--Decorative background graphics only-->
       <div class="p5-bg" aria-hidden="true">
         <svg style="position:absolute;inset:0;width:100%;height:100%" viewBox="0 0 620 440" preserveAspectRatio="xMidYMid slice">
-          <!-- base dark backdrop + diagonal purple stripe -->
+          <!--base dark backdrop + diagonal purple stripe-->
           <rect width="620" height="440" fill="#09060D"/>
           <polygon points="0,0 200,0 130,440 0,440" fill="#120A1A" opacity=".9"/>
           <polygon points="480,0 620,0 620,440 550,440" fill="#120A1A" opacity=".9"/>
           <polygon points="0,380 620,340 620,360 0,400" fill="#534AB7" opacity=".85"/>
           <polygon points="0,388 620,348 620,352 0,408" fill="#7F77DD" opacity=".3"/>
-          <!-- soft glow circles -->
+          <!--soft glow circles-->
           <circle cx="100" cy="100" r="55" fill="#534AB7" opacity=".07"/>
           <circle cx="520" cy="330" r="45" fill="#534AB7" opacity=".07"/>
           <circle cx="310" cy="220" r="130" fill="#3C3489" opacity=".05"/>
-          <!-- tiny 4-point sparkle shapes -->
+          <!--tiny 4-point sparkle shapes-->
           <path d="M140 60 L141.5 64.5 L140 69 L138.5 64.5Z" fill="#AFA9EC" opacity=".5"/>
           <path d="M135.5 64.5 L140 66 L144.5 64.5 L140 63Z" fill="#AFA9EC" opacity=".5"/>
           <path d="M480 350 L481.2 353.5 L480 357 L478.8 353.5Z" fill="#C9A84C" opacity=".45"/>
@@ -68,8 +60,7 @@
           <circle cx="160" cy="320" r="2" fill="#7F77DD" opacity=".35"/>
         </svg>
 
-        <!-- TODO (illustration swap): these gradient leaf/gem shapes are a placeholder
-             for hand-drawn scrapbook illustrations I want to make later -->
+        <!--TODO (illustration swap)-->
         <svg class="leaf-layer" viewBox="0 0 620 440" xmlns="http://www.w3.org/2000/svg" overflow="visible" aria-hidden="true">
           <defs>
             <linearGradient id="lp1" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -93,7 +84,7 @@
         </svg>
       </div>
 
-      <!-- The actual hero text, sitting on top of the background graphics above -->
+      <!--hero text-->
       <div class="home-content">
         <div class="home-center">
           <div class="home-eyebrow">&#10022; UCF Honors &middot; CS + Digital Media &middot; Class of 2028</div>
@@ -101,9 +92,8 @@
           <p class="home-sub">Interdisciplinary Sorceress</p>
           <p class="home-body">Crafting immersive interfaces, simulations, and playful digital experiences &mdash; somewhere between code and conjuring.</p>
           <div class="cta-row" style="justify-content:center">
-            <!-- TODO (swap link): main call-to-action, should always point at my full site -->
             <a class="cta-p" href="https://sarayu.dev" target="_blank" rel="noopener">Open Grimoire</a>
-            <!-- TODO (swap link): point this at my actual resume PDF once it's uploaded -->
+            <!--TODO (swap link)-->
             <a class="cta-s cta-s-dark" href="#" onclick="return false">Download Resume</a>
           </div>
         </div>
@@ -112,19 +102,15 @@
     <div class="torn-b"></div>
   </div>
 
-  <!-- ============================================================
-       SECTION: ORIGINS (About Me)
-       My photo, a short intro, my two "About Me" paragraphs pulled
-       straight from my real site, and a quick facts list.
-       ============================================================ -->
+  <!--about me-->
   <div class="pg-shell" id="origins">
     <div class="torn-t"></div>
     <div class="parch-bg">
       <div class="washi" style="background:rgba(127,119,221,.42);width:70px;top:20px;left:8%;transform:rotate(-3deg)"></div>
       <div class="washi" style="background:rgba(201,168,76,.4);width:52px;top:24px;right:9%;transform:rotate(4deg)"></div>
-      <!-- little 4-point sparkle, purely decorative -->
+      <!--decorative 4-point sparkle, used claude to figure out how to do this part-->
       <svg width="14" height="14" style="position:absolute;top:56px;right:20%;opacity:.5" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0 L9.5 6.5 L16 8 L9.5 9.5 L8 16 L6.5 9.5 L0 8 L6.5 6.5Z" fill="#7F77DD"/></svg>
-      <!-- little pressed-flower doodle -->
+      <!--little pressed-flower-->
       <svg width="20" height="20" style="position:absolute;bottom:14px;left:5%;opacity:.6" viewBox="0 0 20 20" aria-hidden="true">
         <ellipse cx="10" cy="6" rx="2.4" ry="4" fill="#D4A7B8" opacity=".8"/>
         <ellipse cx="10" cy="6" rx="2.4" ry="4" fill="#D4A7B8" opacity=".7" transform="rotate(72 10 10)"/>
@@ -141,12 +127,11 @@
         </div>
 
         <div class="hero-flex">
-          <!-- polaroid-style photo frame -->
+          <!--polaroid-style photo frame-->
           <div class="pol">
-            <!-- TODO (image swap): replace with a different photo any time -->
             <img src="assets/portrait.jpg" alt="Portrait of Sarayu Marri" width="180" height="150">
             <div class="pol-cap">candid, 2026</div>
-            <!-- TODO (illustration swap): pressed-flower placeholder, want to hand-draw this later -->
+            <!--TODO (illustration swap)-->
             <svg width="26" height="26" style="position:absolute;bottom:-10px;right:-12px" viewBox="0 0 20 20" aria-hidden="true">
               <ellipse cx="10" cy="6" rx="3" ry="5" fill="#D4A7B8" opacity=".8"/>
               <ellipse cx="10" cy="6" rx="3" ry="5" fill="#D4A7B8" opacity=".7" transform="rotate(72 10 10)"/>
@@ -157,7 +142,7 @@
             </svg>
           </div>
 
-          <!-- bio text, copied word-for-word from the About page on sarayu.dev -->
+          <!--bio text -->
           <div>
             <p class="hero-eyebrow" style="margin-bottom:2px">Hi, my name is</p>
             <h3 style="font-family:'Cinzel',serif;font-size:24px;color:var(--ink);letter-spacing:.06em;margin-bottom:12px">SARAYU MARRI</h3>
@@ -166,13 +151,13 @@
           </div>
         </div>
 
-        <!-- little wax-seal-style stamps, purely decorative -->
+        <!-- wax-seal-style stamps-->
         <div class="stamp-row">
           <div class="stamp"><div class="stamp-txt">UCF<br>HONORS<br>2026</div></div>
           <div class="stamp" style="transform:rotate(5deg)"><div class="stamp-txt">2&times;<br>WINNER<br>&#10022;</div></div>
         </div>
 
-        <!-- quick bullet facts, required <ul> list for the assignment -->
+        <!--bullet facts-->
         <ul class="facts" style="margin-top:20px">
           <li class="fact"><span class="fdot"></span><span class="ftxt">UCF Burnett Honors College</span></li>
           <li class="fact"><span class="fdot"></span><span class="ftxt">KnightHacks Organizer &middot; student-led RSO at UCF</span></li>
@@ -185,13 +170,7 @@
     <div class="torn-b"></div>
   </div>
 
-  <!-- ============================================================
-       SECTION: QUESTS (Education + Experience + Achievements)
-       Everything about what I've studied and worked on. The five
-       cards below use my exact resume wording so the details stay
-       accurate. Achievement tickets sit at the bottom of this same
-       section instead of getting their own separate page.
-       ============================================================ -->
+  <!--experience section-->
   <div class="pg-shell" id="quests">
     <div class="torn-t"></div>
     <div class="parch-bg">
@@ -200,20 +179,20 @@
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7F77DD" stroke-width="1.2" style="position:absolute;top:60px;right:22%;opacity:.5" aria-hidden="true"><path d="M12 2 L14.2 9.2 L21.5 9.8 L15.8 14.5 L17.8 21.6 L12 17.4 L6.2 21.6 L8.2 14.5 L2.5 9.8 L9.8 9.2 Z"/></svg>
 
       <div class="parch-inner">
-        <!-- Education, from my resume -->
+        <!--education from my resume-->
         <div class="section-head">
           <div class="section-eyebrow">&#10022; Education</div>
           <h2 class="section-title">UNIVERSITY OF CENTRAL FLORIDA</h2>
           <p class="section-sub">Bachelor of Science in Computer Science; Minor in Digital Media &mdash; Burnett Honors College</p>
         </div>
 
-        <!-- Experience heading -->
+        <!--Experience heading-->
         <div class="section-head" style="margin-top:8px">
           <div class="section-eyebrow">I have taken on a range of roles that have helped me grow both technically and personally.</div>
           <h2 class="section-title">QUESTS</h2>
         </div>
 
-        <!-- Each <li> is one job/role. Text below is copied exactly from my resume. -->
+        <!--jobs/roles--->
         <ul class="exp-list">
           <li class="exp-card">
             <span class="exp-tag">May 2026 &ndash; Present</span>
@@ -247,7 +226,7 @@
           </li>
         </ul>
 
-        <!-- Achievement "tickets" — folded in here instead of a whole separate section -->
+        <!--Achievements-->
         <div class="ticket-row" style="margin-top:24px">
           <div class="ticket">
             <div class="ticket-label">ACHIEVEMENT UNLOCKED</div>
@@ -270,11 +249,7 @@
     <div class="torn-b"></div>
   </div>
 
-  <!-- ============================================================
-       SECTION: ARCHIVE (Projects)
-       Card grid, one card per project. The colored strip at the
-       top of each card (.qtop) is a stand-in for a real screenshot.
-       ============================================================ -->
+  <!--Projects section-->
   <div class="pg-shell" id="archive">
     <div class="torn-t"></div>
     <div class="parch-bg">
@@ -298,7 +273,6 @@
 
         <div class="qgrid">
 
-          <!-- TODO (image swap): .qtop is a solid color placeholder — drop in a real screenshot -->
           <div class="qcard win">
             <div class="qtop"><span class="qtag">KnightHacks VIII</span><span class="qawd"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2 L14.7 9 L22 9.5 L16.3 14.2 L18.3 21.3 L12 17.1 L5.7 21.3 L7.7 14.2 L2 9.5 L9.3 9 Z"/></svg></span></div>
             <div class="qbody">
@@ -309,7 +283,6 @@
             </div>
           </div>
 
-          <!-- TODO (image swap): .qtop is a solid color placeholder — drop in a real screenshot -->
           <div class="qcard">
             <div class="qtop"><span class="qtag">ShellHacks 2025</span></div>
             <div class="qbody">
@@ -320,7 +293,6 @@
             </div>
           </div>
 
-          <!-- TODO (image swap): .qtop is a solid color placeholder — drop in a real screenshot -->
           <div class="qcard win">
             <div class="qtop"><span class="qtag">SASE Connect Hackathon 2025</span><span class="qawd"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2 L14.7 9 L22 9.5 L16.3 14.2 L18.3 21.3 L12 17.1 L5.7 21.3 L7.7 14.2 L2 9.5 L9.3 9 Z"/></svg></span></div>
             <div class="qbody">
@@ -329,13 +301,11 @@
               <p class="qdesc">CappuConnect is a coffee-chat inspired networking platform designed to make professional development approachable and personalized. Users can discover like-minded peers, swipe to connect, and find events tailored to their skills and goals. Built with a modern full-stack approach, CappuConnect leverages real-time recommendations, secure authentication, and web scraping to create a seamless and engaging networking experience.</p>
               <div class="qfooter">
                 <div class="tech-tags"><span>Next.js</span><span>React</span><span>Typescript</span><span>Tailwind CSS</span><span>MongoDB</span><span>NextAuth</span><span>Git</span></div>
-                <!-- TODO (swap link): keep this pointed at the live deployed app -->
                 <a class="qlink" href="https://cappuconnect.vercel.app/" target="_blank" rel="noopener">Try it out &#8594;</a>
               </div>
             </div>
           </div>
 
-          <!-- TODO (image swap): .qtop is a solid color placeholder — drop in a real screenshot -->
           <div class="qcard">
             <div class="qtop"><span class="qtag">UCF STEM Day 2024</span></div>
             <div class="qbody">
@@ -351,13 +321,7 @@
     <div class="torn-b"></div>
   </div>
 
-  <!-- ============================================================
-       SECTION: ARCANA (Skills)
-       Flip cards! Each <label>+<input type="checkbox"> pair is a
-       CSS-only flip trick: clicking the label toggles the hidden
-       checkbox, which the CSS uses to rotate the card. No
-       JavaScript needed, and it also works with hover on desktop.
-       ============================================================ -->
+  <!--skills section-->
   <div class="pg-shell" id="arcana">
     <div class="torn-t"></div>
     <div class="parch-bg">
@@ -374,7 +338,7 @@
 
         <div class="tarot-deck">
 
-          <!-- TODO (illustration swap): .tc-sym line-art SVGs are placeholders for hand-drawn tarot icons -->
+          <!--TODO (illustration swap)-->
           <label class="tarot-card" tabindex="0" role="button" aria-label="The Fool — flip for computer vision and systems skills">
             <input type="checkbox">
             <div class="tc-inner">
@@ -383,7 +347,6 @@
             </div>
           </label>
 
-          <!-- TODO (illustration swap): .tc-sym line-art SVGs are placeholders for hand-drawn tarot icons -->
           <label class="tarot-card" tabindex="0" role="button" aria-label="The Magician — flip for frontend skills">
             <input type="checkbox">
             <div class="tc-inner">
@@ -392,7 +355,6 @@
             </div>
           </label>
 
-          <!-- TODO (illustration swap): .tc-sym line-art SVGs are placeholders for hand-drawn tarot icons -->
           <label class="tarot-card" tabindex="0" role="button" aria-label="The High Priestess — flip for design skills">
             <input type="checkbox">
             <div class="tc-inner">
@@ -401,7 +363,6 @@
             </div>
           </label>
 
-          <!-- TODO (illustration swap): .tc-sym line-art SVGs are placeholders for hand-drawn tarot icons -->
           <label class="tarot-card" tabindex="0" role="button" aria-label="The Empress — flip for game dev skills">
             <input type="checkbox">
             <div class="tc-inner">
@@ -410,7 +371,6 @@
             </div>
           </label>
 
-          <!-- TODO (illustration swap): .tc-sym line-art SVGs are placeholders for hand-drawn tarot icons -->
           <label class="tarot-card" tabindex="0" role="button" aria-label="The Star — flip for backend skills">
             <input type="checkbox">
             <div class="tc-inner">
@@ -425,10 +385,7 @@
     <div class="torn-b"></div>
   </div>
 
-  <!-- ============================================================
-       SECTION: SUMMON (Contact)
-       Simple list of ways to reach me, plus two decorative stamps.
-       ============================================================ -->
+  <!--contact section-->
   <div class="pg-shell" id="contact">
     <div class="torn-t"></div>
     <div class="parch-bg">
@@ -443,13 +400,9 @@
         </div>
 
         <nav class="contact-links" aria-label="Contact links">
-          <!-- TODO (swap link): update if my GitHub username ever changes -->
           <a class="contact-link" href="https://github.com/sarayumarri" target="_blank" rel="noopener"><span class="contact-icon">GH</span>github.com/sarayumarri</a>
-          <!-- TODO (swap link): update if my LinkedIn username ever changes -->
           <a class="contact-link" href="https://linkedin.com/in/sarayumarri" target="_blank" rel="noopener"><span class="contact-icon">in</span>linkedin.com/in/sarayumarri</a>
-          <!-- TODO (swap link): update if I ever change my contact email -->
           <a class="contact-link" href="mailto:sarayu.marri3@gmail.com"><span class="contact-icon">@</span>sarayu.marri3@gmail.com</a>
-          <!-- TODO (swap link): this should always point at my full site -->
           <a class="contact-link" href="https://sarayu.dev" target="_blank" rel="noopener"><span class="contact-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><line x1="3" y1="12" x2="21" y2="12"/></svg></span>sarayu.dev</a>
         </nav>
 
@@ -464,9 +417,7 @@
 
 </main>
 
-<!-- ============================================================
-     FOOTER (closing section, required by the assignment)
-     ============================================================ -->
+<!--footer-->
 <footer class="pg-footer">
   <div class="ft-logo">S &middot; SARAYU &middot; 2026</div>
   <div class="ft-txt">made with &#9733; by Sarayu</div>
