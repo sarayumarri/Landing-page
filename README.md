@@ -1,28 +1,28 @@
 # Sarayu Marri — My Sorceress's Grimoire
 
-> **Status:** this is still a work in progress! I plan to keep tweaking it after submitting — see Future Improvements below for what's next.
+> **Heads up:** this is still a work in progress! I'm planning to keep tweaking it after I submit, so check out Future Improvements below for what's next on my list.
 
 ## Project Description
-A single-page responsive landing page built to match the dark-academia "grimoire" design language of my real portfolio (sarayu.dev) — leather-bound frame, torn parchment pages, tarot card skills deck, quest-style project cards, and wax-seal contact section.
+A single-page landing page styled after the dark-academia "grimoire" look of my real portfolio (sarayu.dev). Think leather-bound frame, torn parchment pages, a flippable tarot card skills deck, quest-style project cards, and a wax-seal contact section.
 
 ## Intended User or Player
-A recruiter, professor, or fellow student browsing my portfolio who wants a fast, memorable overview of who I am, what I've built, and how to reach me — while feeling the same design identity as my full site.
+A recruiter, professor, or fellow student who's checking out my portfolio and wants a quick, memorable sense of who I am, what I've built, and how to reach me, without it feeling like a totally different site from my main one.
 
 ## User / Player Goal
-Get oriented on my background, see real project and experience details without embellishment, and know how to get in touch or visit the full site.
+Get a feel for my background, see real project and experience details (no fluff or exaggeration), and know how to get in touch or click through to the full site.
 
 ## Inspiration Interfaces
-- **My own sarayu.dev** — this page reuses the exact color tokens, typefaces, and component patterns (torn edges, tarot cards, quest cards, wax seals, tickets) from my real site so the two feel like the same product.
-- **Persona 5 UI** — sharp diagonal cuts and bold accent color blocking, referenced in the CTA button shapes (clipped parallelogram edges).
-- **Physical scrapbooks / tarot decks** — washi tape, polaroid corners, and the flip-card mechanic for the skills section.
+- **My own sarayu.dev**: I pulled the exact colors, fonts, and components (torn edges, tarot cards, quest cards, wax seals, tickets) straight from my real site so this page feels like part of the same world instead of a knockoff.
+- **Persona 5's UI**: I borrowed the sharp diagonal cuts and bold color blocking for the CTA button shapes (the clipped parallelogram edges).
+- **Physical scrapbooks and tarot decks**: washi tape, polaroid corners, and the flip-card mechanic in the skills section all came from wanting it to feel handmade rather than templated.
 
 ## Design Choices
-- **Layout:** A vertical single-page scroll through leather-framed "pages" (intro, Chronicle, Experience, Spells/Projects, Arcana, Achievements, Summon/Contact), each with stitched borders, corner rivets, and torn top/bottom edges to read as physical journal pages.
-- **Color:** Leather browns (`#2A1508`, `#3D2010`, `#1A0C04`), parchment (`#F0E2C4`, `#E8D5A8`), gold accents (`#C9A84C`, `#8B6914`), and purple as the "magic" accent (`#7F77DD`, `#534AB7`) — pulled directly from my site's token system.
-- **Typography:** Cinzel for headings and labels (formal, engraved feel), Cormorant Garamond for body copy, Caveat for handwritten annotations and tags.
-- **Visual hierarchy:** Section eyebrows in Caveat, all-caps Cinzel section titles, and italic Cormorant Garamond subtitles establish a consistent three-tier heading rhythm across every section.
-- **Feedback states:** Nav tabs highlight on hover/focus, tarot cards flip on hover (desktop) and on tap/click (touch — via a checkbox toggle so it works without JavaScript), project/contact links change color and background on hover/focus, all interactive elements have a visible focus ring for keyboard navigation.
-- **Responsive design:** Below 720px, the experience and project grids collapse to a single column, the nav wraps, and the hero stacks the photo above the text.
+- **Layout:** One long scroll through leather-framed "pages": Hero, Origins, Quests, Archive, Arcana, and Summon, each with torn top and bottom edges so it reads like turning pages in a journal.
+- **Color:** Leather browns (`#2A1508`, `#3D2010`, `#1A0C04`), parchment (`#F0E2C4`, `#E8D5A8`), gold accents (`#C9A84C`, `#8B6914`), and purple as the "magic" color (`#7F77DD`, `#534AB7`), all taken directly from my site's color system.
+- **Typography:** Cinzel for headings (it has that formal, engraved look), Cormorant Garamond for body text, and Caveat for the handwritten-style tags and notes.
+- **Visual hierarchy:** Every section follows the same rhythm: a small Caveat eyebrow line, an all-caps Cinzel title, and an italic Cormorant Garamond subtitle, so the page feels consistent even though there's a lot going on.
+- **Feedback states:** Nav links highlight on hover/focus, tarot cards flip on hover on desktop and on tap on mobile (done with a hidden checkbox trick, so no JavaScript needed), and every link and card has a visible focus outline for keyboard users.
+- **Responsive design:** Below 720px, the experience and project grids drop from two columns to one, the nav wraps, and the hero stacks the photo above the text instead of side by side.
 
 ## Technologies Used
 - HTML
@@ -30,13 +30,13 @@ Get oriented on my background, see real project and experience details without e
 - GitHub Pages
 
 ## Credits
-- Fonts: Cinzel, Cormorant Garamond, Caveat — all via Google Fonts.
-- Portrait photo: personal photo by the author, cropped for the polaroid frame.
-- Design language (colors, torn-edge/tarot-card/quest-card/wax-seal patterns): adapted from the author's own sarayu.dev.
-- No other tutorials, templates, or third-party code were used.
+- Fonts: Cinzel, Cormorant Garamond, and Caveat, all from Google Fonts.
+- The portrait photo is my own.
+- The color palette and the torn-edge/tarot-card/quest-card/wax-seal look are adapted from my own sarayu.dev, not copied from anyone else.
+- Everything else (layout, icons, code) is original. No templates or tutorials used.
 
 ## Future Improvements
-- **Hand-draw the scrapbook illustrations.** The tarot card symbols in the Arcana section are emoji placeholders right now (marked with `TODO (illustration swap)` comments in `index.html`) — I want to replace them with my own hand-drawn icons, along with the pressed-flower doodle on the photo and the leaf/gem hero background.
-- Wire up the "Download Resume" button to an actual PDF (marked with a `TODO (swap link)` comment).
-- Drop in real screenshots for each project card instead of the solid-color placeholders (also marked with `TODO` comments).
-- Add the dark/light mode toggle from the full site.
+- **Hand-draw the scrapbook illustrations.** Right now the tarot card icons in the Arcana section are simple line-art SVGs standing in for the real thing (look for `TODO (illustration swap)` comments in `index.html`). I want to go back and hand-draw those, plus the pressed-flower doodle on the photo and the leaf/gem hero background.
+- Hook up the "Download Resume" button to an actual PDF (there's a `TODO (swap link)` comment marking where).
+- Swap in real screenshots for each project card instead of the solid-color placeholders (also marked with `TODO` comments).
+- Maybe bring over the dark/light mode toggle from the full site.
